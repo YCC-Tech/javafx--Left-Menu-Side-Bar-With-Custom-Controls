@@ -8,7 +8,7 @@ We have
 - added custom minimize and close button
 - added active state in menu items
 - included custom font configurations and
-- also included jMetro theme like Miscrosoft Fluent UI
+- also included [JMetro](https://github.com/JFXtras/jfxtras-styles/releases) theme like Miscrosoft Fluent UI
 
 Enjoy! :heart_eyes:
 
