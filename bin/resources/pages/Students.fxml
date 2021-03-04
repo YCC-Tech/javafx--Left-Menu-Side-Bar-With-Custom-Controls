@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="660.0" maxWidth="1010.0" minHeight="660.0" minWidth="1010.0" prefHeight="660.0" prefWidth="1010.0" styleClass="basePane" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentController">
+	<children>
+	<BorderPane fx:id="bp" maxHeight="650.0" maxWidth="990.0" minHeight="640.0" minWidth="990.0" prefHeight="650.0" prefWidth="990.0" styleClass="baseBorderPane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+		<left>
+			<Pane fx:id="leftSideMenu" prefHeight="639.0" prefWidth="200.0" styleClass="leftSideMenu" BorderPane.alignment="CENTER">
+				<children>
+					<AnchorPane prefHeight="66.0" prefWidth="200.0">
+						<children>
+							<Label layoutX="24.0" styleClass="titleLogo" text="EduLink">
+								<font>
+									<Font name="System Bold" size="34.0" />
+								</font>
+							</Label>
+							<Label layoutX="25.0" layoutY="39.0" styleClass="subTitleLogo" text="Management System" textFill="#3367d6">
+								<font>
+									<Font name="System Italic" size="14.0" />
+								</font>
+							</Label>
+						</children>
+					</AnchorPane>
+					<VBox layoutY="91.0" prefHeight="336.0" prefWidth="200.0">
+						<children>
+							<Pane id="studentsMenuItem" fx:id="studentsMenuItem" onMouseClicked="#processStudentsMenuItem" prefHeight="56.0" prefWidth="200.0" styleClass="leftSideMenuItem">
+								<children>
+									<Pane fx:id="menuItemIconStudents" layoutX="21.0" layoutY="15.0" prefHeight="29.0" prefWidth="32.0" styleClass="studentIcon" />
+									<Label fx:id="lblStudents" layoutX="56.0" layoutY="17.0" styleClass="leftSideMenuLabel" text="Students">
+										<font>
+											<Font size="16.0" />
+										</font>
+									</Label>
+								</children>
+							</Pane>
+							<Pane id="transactionsMenuItem" fx:id="transactionsMenuItem" onMouseClicked="#processTransactionsMenuItem" prefHeight="56.0" prefWidth="200.0" styleClass="leftSideMenuItem">
+								<children>
+									<Label fx:id="lblTransactions" layoutX="55.0" layoutY="16.0" styleClass="leftSideMenuLabel" text="Transactions">
+										<font>
+											<Font name="Oswald Regular" size="16.0" />
+										</font>
+									</Label>
+									<Pane fx:id="menuItemIconTransactions" layoutX="21.0" layoutY="18.0" prefHeight="29.0" prefWidth="32.0" styleClass="transactionIcon" />
+								</children>
+							</Pane>
+							<Pane id="donatorsMenuItem" fx:id="donatorsMenuItem" onMouseClicked="#processDonatorsMenuItem" prefHeight="56.0" prefWidth="200.0" styleClass="leftSideMenuItem">
+								<children>
+									<Label fx:id="lblDonators" layoutX="55.0" layoutY="18.0" styleClass="leftSideMenuLabel" text="Donators">
+										<font>
+											<Font name="Oswald Regular" size="16.0" />
+										</font>
+									</Label>
+									<Pane fx:id="menuItemIconDonators" layoutX="21.0" layoutY="17.0" prefHeight="29.0" prefWidth="32.0" styleClass="donatorIcon" />
+								</children>
+							</Pane>
+							<Pane id="reportsMenuItem" fx:id="reportsMenuItem" onMouseClicked="#processReportsMenuItem" prefHeight="56.0" prefWidth="200.0" styleClass="leftSideMenuItem">
+								<children>
+									<Label fx:id="lblReports" layoutX="55.0" layoutY="18.0" styleClass="leftSideMenuLabel" text="Reports">
+										<font>
+											<Font name="Oswald Regular" size="16.0" />
+										</font>
+									</Label>
+									<Pane fx:id="menuItemIconReports" layoutX="21.0" layoutY="17.0" prefHeight="29.0" prefWidth="32.0" styleClass="reportIcon" />
+								</children>
+							</Pane>
+							<Pane id="adminsMenuItem" fx:id="adminsMenuItem" onMouseClicked="#processAdminsMenuItem" prefHeight="56.0" prefWidth="200.0" styleClass="leftSideMenuItem">
+								<children>
+									<Label fx:id="lblAdmins" layoutX="55.0" layoutY="18.0" styleClass="leftSideMenuLabel" text="Admins">
+										<font>
+											<Font name="Oswald Regular" size="16.0" />
+										</font>
+									</Label>
+									<Pane fx:id="menuItemIconAdmins" layoutX="21.0" layoutY="17.0" prefHeight="29.0" prefWidth="32.0" styleClass="adminIcon" />
+								</children>
+							</Pane>
+						</children>
+					</VBox>
+					<Label layoutX="27.0" layoutY="559.0" styleClass="teamName" text="UT-YCC Tech" textFill="#7d6fff">
+						<font>
+							<Font name="System Italic" size="12.0" />
+						</font>
+					</Label>
+					<Label layoutX="27.0" layoutY="542.0" styleClass="proudlyDevelopedText" text="proudly developed by">
+						<textFill>
+							<LinearGradient endX="1.0" endY="1.0">
+								<stops>
+									<Stop>
+										<color>
+											<Color red="0.8421052694320679" green="0.8421052694320679" blue="0.8421052694320679" />
+										</color>
+									</Stop>
+									<Stop offset="1.0">
+										<color>
+											<Color red="1.0" green="1.0" blue="1.0" />
+										</color>
+									</Stop>
+								</stops>
+							</LinearGradient>
+						</textFill>
+					</Label>
+				</children>
+			</Pane>
+		</left>
+		<center>
+			<AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" styleClass="contentArea" BorderPane.alignment="CENTER">
+				<children>
+					<Label layoutX="386.0" layoutY="317.0" text="Home..." />
+				</children>
+			</AnchorPane>
+		</center>
+		<top>
+			<Pane prefHeight="31.0" prefWidth="984.0" styleClass="titleBar" BorderPane.alignment="CENTER">
+				<children>
+					<Pane fx:id="btnCloseWindow" layoutX="944.0" onMouseClicked="#processCloseWindow" prefHeight="31.0" prefWidth="46.0" styleClass="btnCloseWindow">
+						<children>
+							<Pane layoutX="17.0" layoutY="10.0" prefHeight="29.0" prefWidth="32.0" styleClass="btnCloseWindowIcon" />
+						</children>
+					</Pane>
+					<Pane prefHeight="33.0" prefWidth="200.0" styleClass="blockAboveTitle" />
+					<Pane fx:id="btnMinimizeWindow" layoutX="900.0" onMouseClicked="#processMinimizeWindow" prefHeight="31.0" prefWidth="46.0" styleClass="btnMinimizeWindow">
+						<children>
+							<ImageView fitHeight="19.0" fitWidth="28.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+								<image>
+									<Image url="@../icons/minimize.png" />
+								</image>
+							</ImageView>
+						</children>
+					</Pane>
+				</children>
+			</Pane>
+		</top>
+      <effect>
+         <DropShadow />
+      </effect>
+	</BorderPane>
+	</children>
+</AnchorPane>
